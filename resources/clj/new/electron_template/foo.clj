@@ -1,0 +1,1 @@
+(ns {{root-ns}}.foo)
