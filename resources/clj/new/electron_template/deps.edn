@@ -1,14 +1,22 @@
-{:paths ["resources" "src"]
- :deps {org.clojure/clojure {:mvn/version "1.10.1"}
-        seancorfield/clj-new
-        {:git/url "https://github.com/seancorfield/clj-new"
-         :sha "492bb2e7ad7373a8b5958124a86cddc4c7a123d5"}}
- :aliases
- {:test {:extra-paths ["test"]
-         :extra-deps {org.clojure/test.check {:mvn/version "0.10.0"}}}
-  :runner
-  {:extra-deps {com.cognitect/test-runner
-                {:git/url "https://github.com/cognitect-labs/test-runner"
-                 :sha "76568540e7f40268ad2b646110f237a60295fa3c"}}
-   :main-opts ["-m" "cognitect.test-runner"
-               "-d" "test"]}}}
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.597"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.3"}
+        reagent {:mvn/version "0.9.0-rc1" :exclusions [cljsjs/react cljsjs/react-dom]}}
+ :paths []
+ :aliases {:main {:extra-paths ["src/main" "src/config/prod"]
+                  :main-opts ["--main" "figwheel.main"
+                              "--optimizations" "simple"
+                              "--build-once" "main"]}
+           :renderer {:extra-paths ["src/renderer"]
+                      :main-opts ["--main" "figwheel.main"
+                                  "--optimizations" "simple"
+                                  "--build-once" "renderer"]}
+           :dev {:extra-paths ["src/main" "src/renderer" "src/config/dev" "src/test"]
+                 :main-opts ["--main" "figwheel.main"
+                             "--build" "dev"
+                             "--repl"]}
+           :test {:extra-paths ["src/main" "src/renderer" "src/config/dev" "src/test"]
+                  :main-opts ["--main" "figwheel.main"
+                              "--compile-opts" "test.cljs.edn"
+                              "--main" "opentrack.test.runner-cmdline"]}}}
