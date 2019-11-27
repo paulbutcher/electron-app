@@ -1,5 +1,5 @@
-(ns opentrack.main.core
-  (:require [opentrack.config :as config]))
+(ns {{name}}.main.core
+  (:require [{{name}}.config :as config]))
 
 (def Electron (js/require "electron"))
 (def BrowserWindow (.-BrowserWindow Electron))

@@ -1,10 +1,10 @@
 ^{:launch-js ["npm" "start"]
   :watch-dirs ["src/config/dev" "src/main" "src/renderer" "src/test"]
-  :extra-main-files {:renderer {:main opentrack.renderer.core
+  :extra-main-files {:renderer {:main {{name}}.renderer.core
                                 :output-to "bin/renderer.js"}
-                     :tests {:main opentrack.test.runner-visual
+                     :tests {:main {{name}}.test.runner-visual
                              :output-to "bin/tests.js"}}}
-{:main opentrack.main.core
+{:main {{name}}.main.core
  :output-dir "cljs-temp"
  :output-to "bin/main.js"
  :target :nodejs}

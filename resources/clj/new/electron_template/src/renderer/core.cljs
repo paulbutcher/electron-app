@@ -1,4 +1,4 @@
-(ns opentrack.renderer.core
+(ns {{name}}.renderer.core
   (:require [reagent.core :as r]))
 
 (defonce timer (r/atom (js/Date.)))

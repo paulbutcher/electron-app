@@ -1,7 +1,7 @@
-(ns opentrack.test.runner-cmdline
+(ns {{name}}.test.runner-cmdline
   (:require [figwheel.main.testing :refer-macros [run-tests-async]]
-            [opentrack.renderer.arithmetic-test]
-            [opentrack.main.arithmetic-test]))
+            [{{name}}.renderer.arithmetic-test]
+            [{{name}}.main.arithmetic-test]))
 
 (defn -main [& args]
   (run-tests-async 10000))

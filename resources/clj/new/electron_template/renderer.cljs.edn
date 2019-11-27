@@ -1,5 +1,5 @@
 ^{:launch-node false}
-{:main opentrack.renderer.core
+{:main {{name}}.renderer.core
  :output-dir "cljs-temp"
  :output-to "bin/renderer.js"
  :target :nodejs}

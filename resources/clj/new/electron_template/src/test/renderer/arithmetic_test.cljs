@@ -1,6 +1,6 @@
-(ns opentrack.renderer.arithmetic-test
+(ns {{name}}.renderer.arithmetic-test
   (:require [cljs.test :refer-macros [deftest is testing]]
-            [opentrack.renderer.arithmetic :refer [multiply]]))
+            [{{name}}.renderer.arithmetic :refer [multiply]]))
 
 (deftest multiply-test
   (is (= (* 1 2) (multiply 1 2))))

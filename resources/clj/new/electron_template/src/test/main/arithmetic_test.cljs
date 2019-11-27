@@ -1,6 +1,6 @@
-(ns opentrack.main.arithmetic-test
+(ns {{name}}.main.arithmetic-test
   (:require [cljs.test :refer-macros [deftest is testing]]
-            [opentrack.main.arithmetic :refer [add]]))
+            [{{name}}.main.arithmetic :refer [add]]))
 
 (deftest add-test
   (is (= (+ 1 2) (add 1 2))))
