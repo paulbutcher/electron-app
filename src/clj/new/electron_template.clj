@@ -3,9 +3,7 @@
 
 (def render (renderer "electron-template"))
 
-(defn electron-template
-  "FIXME: write documentation"
-  [name]
+(defn electron-template) [name]
   (let [data {:name (project-name name)
               :sanitized (sanitize (project-name name))}]
     (println "Generating an Electron application called" (project-name name))
@@ -29,4 +27,4 @@
              ["src/test/{{sanitized}}/main/arithmetic_test.cljs" (render "src/test/main/arithmetic_test.cljs" data)]
              ["src/test/{{sanitized}}/renderer/arithmetic_test.cljs" (render "src/test/renderer/arithmetic_test.cljs" data)]
              ["src/test/{{sanitized}}/test/runner_cmdline.cljs" (render "src/test/test/runner_cmdline.cljs" data)]
-             ["src/test/{{sanitized}}/test/runner_visual.cljs" (render "src/test/test/runner_visual.cljs" data)])))
+             ["src/test/{{sanitized}}/test/runner_visual.cljs" (render "src/test/test/runner_visual.cljs" data)]))
