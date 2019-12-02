@@ -1,9 +1,9 @@
-(ns clj.new.electron-template
+(ns clj.new.electron-app
   (:require [clj.new.templates :refer [renderer project-name ->files sanitize]]))
 
-(def render (renderer "electron-template"))
+(def render (renderer "electron-app"))
 
-(defn electron-template [name]
+(defn electron-app [name]
   (let [data {:name (project-name name)
               :sanitized (sanitize (project-name name))}]
     (println "Generating an Electron application called" (project-name name))

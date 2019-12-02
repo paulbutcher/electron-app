@@ -1,4 +1,4 @@
-# electron-template
+# electron-app
 
 A clj template for for an [Electron](https://electronjs.org) application built with [deps.edn](https://clojure.org/reference/deps_and_cli), [Figwheel Main](https://figwheel.org), [Reagent](http://reagent-project.github.io), and test integration via [cljs-test-display](https://github.com/bhauman/cljs-test-display).
 
