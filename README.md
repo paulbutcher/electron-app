@@ -4,7 +4,7 @@ A clj template for for an [Electron](https://electronjs.org) application built w
 
 ## Usage
 
-    clojure -A:new https://github.com/paulbutcher/electron-template@2c601450c40e01b277f31a9b350892a4ca9326d3 myname/myapp
+    clojure -A:new electron-app myname/myapp
 
 This will generate an Electron app with a main process (source for which is located in `src/main`), a single renderer process (`src/renderer`) and unit tests for both (`src/test`).
 
