@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>electron-template</groupId>
+  <artifactId>clj-template</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>
+    DEPRECATED: A clj template for for an Electron application built with deps.edn, Figwheel Main, Reagent, and test integration via cljs-test-display.
+  </description>
+  <url>https://github.com/paulbutcher/electron-template</url>
+  <licenses>
+    <license>
+      <name>Eclipse Public License</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/paulbutcher/electron-template</url>
+  </scm>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src</directory>
+      </resource>
+      <resource>
+        <directory>resources</directory>
+      </resource>
+    </resources>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>clojars</id>
+      <url>https://clojars.org/repo</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>clojars</id>
+      <name>Clojars repository</name>
+      <url>https://clojars.org/repo</url>
+    </repository>
+  </distributionManagement>
+</project>
