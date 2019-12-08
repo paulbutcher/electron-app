@@ -4,7 +4,7 @@
 
   <groupId>electron-app</groupId>
   <artifactId>clj-template</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <description>
     A clj template for for an Electron application built with deps.edn, Figwheel Main, Reagent, and test integration via cljs-test-display.
   </description>
