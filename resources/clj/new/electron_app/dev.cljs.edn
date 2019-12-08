@@ -1,4 +1,5 @@
-^{:launch-js ["npm" "start"]
+^{:launch-js ["npm" "start"] ;; For Windows, change this to ["npm.cmd" "start"]
+                             ;; Suggestions gratefully received for a way to make this automatic
   :watch-dirs ["src/config/dev" "src/main" "src/renderer" "src/test"]
   :extra-main-files {:renderer {:main {{name}}.renderer.core
                                 :output-to "bin/renderer.js"}
